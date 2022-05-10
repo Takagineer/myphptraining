@@ -8,14 +8,9 @@ include('../app/_parts/_header.php');
 ?>
 
 <form action="result.php" method="get">
-  <!-- <input type="text" name="message"> -->
-  <!-- <input type="text" name="username"> -->
-  <!-- <textarea name="message"></textarea> -->
-  <select name="colors[]" multiple >
-    <option value="orange">orange</option>
-    <option value="pink">pink</option>
-    <option value="gold">gold</option>
-  </select>
+  <label><input type="checkbox" name="colors[]" value="orange">orange</label>
+  <label><input type="checkbox" name="colors[]" value="pink">pink</label>
+  <label><input type="checkbox" name="colors[]" value="gold">gold</label>
   <button>send</button>
 </form>
 

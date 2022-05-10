@@ -8,11 +8,12 @@ include('../app/_parts/_header.php');
 // $username = filter_input(INPUT_GET,"username");
 // $message = $message !== ''? $message : '...';
 
-$color = filter_input(INPUT_GET,"color")
+$colors = filter_input(INPUT_GET,"colors",FILTER_DEFAULT,FILTER_REQUIRE_ARRAY);
+$colors = empty($colors) ? 'None selected' : implode(',' , $colors);
 
 ?>
 
-<?= nl2br(h($color)); ?>
+<?= nl2br(h($colors)); ?>
 <!-- <?= h($username); ?></p> -->
 <p><a href="index.php">Go back</a></p>
 

@@ -11,10 +11,10 @@ include('../app/_parts/_header.php');
   <!-- <input type="text" name="message"> -->
   <!-- <input type="text" name="username"> -->
   <!-- <textarea name="message"></textarea> -->
-  <select name="color" >
-    <option value="orange">オレンジ</option>
-    <option value="pink">ピンク</option>
-    <option value="gold">ゴールド</option>
+  <select name="colors[]" multiple >
+    <option value="orange">orange</option>
+    <option value="pink">pink</option>
+    <option value="gold">gold</option>
   </select>
   <button>send</button>
 </form>

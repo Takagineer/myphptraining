@@ -10,7 +10,7 @@ $message = $message !== ''? $message : '...';
 
 ?>
 
-<?= h($message); ?>
+<?= nl2br(h($message)); ?>
 <!-- <?= h($username); ?></p> -->
 <p><a href="index.php">Go back</a></p>
 

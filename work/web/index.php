@@ -13,6 +13,7 @@ include('../app/_parts/_header.php');
   <label><input type="radio" name="color" value="gold">gold</input></label>
   <button>send</button>
 </form>
+<a href="reset.php">[reset]</a>
 
 <?php
 include('../app/_parts/_footer.php');

@@ -4,11 +4,14 @@
 require('../app/functions.php');
 include('../app/_parts/_header.php');
 
-$color = filter_input(INPUT_GET,'color') ?? 'None Selected';
+$colorFromGet = filter_input(INPUT_GET,'color') ?? 'transparent';
+$SESSION['color'] =$colorFromGet;
+//setcookieの前でechoやhtmlを記述してはいけない
+
 
 ?>
 
-<p><?= h($color);?></p>
+<p><?= h($colorFromGet);?></p>
 <p><a href="index.php">Go back</a></p>
 
 <?php
